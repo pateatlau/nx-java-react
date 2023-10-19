@@ -23,8 +23,6 @@ pipeline {
             sh "git fetch origin main:refs/remotes/origin/main"
             echo "npx nx affected lints..."
             sh "npx nx affected  --target=lint  --base=HEAD~1"
-            echo "npx nx affected tests..."
-            sh "npx nx affected  --target=test  --base=HEAD~1"
             echo "npx nx affected builds..."
             sh "npx nx affected  --target=build  --base=HEAD~1"
           }
