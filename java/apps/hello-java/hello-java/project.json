@@ -1,5 +1,5 @@
 {
-  "name": "java\\apps\\hello-java-hello-java",
+  "name": "hello-java",
   "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "java/apps/hello-java/hello-java/src",
   "projectType": "application",
@@ -7,7 +7,7 @@
     "build": {
       "executor": "@nxrocks/nx-spring-boot:build",
       "options": {
-        "root": "./java\\apps\\hello-java/hello-java"
+        "root": "./java/apps/hello-java/hello-java"
       },
       "dependsOn": [
         "^install"
@@ -19,7 +19,7 @@
     "install": {
       "executor": "@nxrocks/nx-spring-boot:install",
       "options": {
-        "root": "./java\\apps\\hello-java/hello-java"
+        "root": "./java/apps/hello-java/hello-java"
       },
       "outputs": [
         "{workspaceRoot}/java/apps/hello-java/hello-java/target"
@@ -28,7 +28,7 @@
     "test": {
       "executor": "@nxrocks/nx-spring-boot:test",
       "options": {
-        "root": "./java\\apps\\hello-java/hello-java"
+        "root": "./java/apps/hello-java/hello-java"
       },
       "outputs": [
         "{workspaceRoot}/java/apps/hello-java/hello-java/target"
@@ -37,25 +37,25 @@
     "clean": {
       "executor": "@nxrocks/nx-spring-boot:clean",
       "options": {
-        "root": "./java\\apps\\hello-java/hello-java"
+        "root": "./java/apps/hello-java/hello-java"
       }
     },
     "run": {
       "executor": "@nxrocks/nx-spring-boot:run",
       "options": {
-        "root": "./java\\apps\\hello-java/hello-java"
+        "root": "./java/apps/hello-java/hello-java"
       }
     },
     "serve": {
       "executor": "@nxrocks/nx-spring-boot:serve",
       "options": {
-        "root": "./java\\apps\\hello-java/hello-java"
+        "root": "./java/apps/hello-java/hello-java"
       }
     },
     "build-image": {
       "executor": "@nxrocks/nx-spring-boot:build-image",
       "options": {
-        "root": "./java\\apps\\hello-java/hello-java"
+        "root": "./java/apps/hello-java/hello-java"
       },
       "outputs": [
         "{workspaceRoot}/java/apps/hello-java/hello-java/target"
@@ -64,7 +64,7 @@
     "build-info": {
       "executor": "@nxrocks/nx-spring-boot:build-info",
       "options": {
-        "root": "./java\\apps\\hello-java/hello-java"
+        "root": "./java/apps/hello-java/hello-java"
       }
     }
   },
