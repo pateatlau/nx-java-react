@@ -21,12 +21,12 @@ pipeline {
 
             echo "git fetch..."
             sh "git fetch origin main:refs/remotes/origin/main"
-            echo "npx nx run-many -t lint"
-            sh "npx nx run-many -t lint"
-            echo "npm nx run-many -t test"
-            sh "npx nx run-many -t test"
-            echo "npx nx run-many -t build"
-            sh "npx nx run-many -t build"
+            echo "npx nx affected lints..."
+            sh "npx nx affected  --target=lint  --base=HEAD~1"
+            echo "npx nx affected tests..."
+            sh "npx nx affected  --target=test  --base=HEAD~1"
+            echo "npx nx builds..."
+            sh "npx nx affected  --target=build  --base=HEAD~1"
           }
         }
       }
