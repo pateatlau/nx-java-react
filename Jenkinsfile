@@ -21,6 +21,8 @@ pipeline {
 
             echo "git fetch..."
             sh "git fetch origin main:refs/remotes/origin/main"
+            echo "chmod +x /var/jenkins_home/workspace/First_pipeline_for_nx_java_react/java/apps/hello-java/hello-java/mvnw"
+            sh "chmod +x /var/jenkins_home/workspace/First_pipeline_for_nx_java_react/java/apps/hello-java/hello-java/mvnw"
             echo "npx nx affected lints..."
             sh "npx nx affected  --target=lint  --base=HEAD~1"
             echo "npx nx affected tests..."
