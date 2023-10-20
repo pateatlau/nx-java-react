@@ -24,7 +24,7 @@ pipeline {
             echo "npx nx run-many -t lint"
             sh "npx nx run-many -t lint"
             echo "npm nx run-many -t test"
-            sh "npm nx run-many -t test"
+            sh "npx nx run-many -t test"
             echo "npx nx run-many -t build"
             sh "npx nx run-many -t build"
           }
