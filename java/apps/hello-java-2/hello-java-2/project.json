@@ -1,0 +1,72 @@
+{
+  "name": "hello-java-2",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "java/apps/hello-java-2/hello-java-2/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nxrocks/nx-spring-boot:build",
+      "options": {
+        "root": "./java/apps/hello-java-2/hello-java-2"
+      },
+      "dependsOn": [
+        "^install"
+      ],
+      "outputs": [
+        "{workspaceRoot}/java/apps/hello-java-2/hello-java-2/target"
+      ]
+    },
+    "install": {
+      "executor": "@nxrocks/nx-spring-boot:install",
+      "options": {
+        "root": "./java/apps/hello-java-2/hello-java-2"
+      },
+      "outputs": [
+        "{workspaceRoot}/java/apps/hello-java-2/hello-java-2/target"
+      ]
+    },
+    "test": {
+      "executor": "@nxrocks/nx-spring-boot:test",
+      "options": {
+        "root": "./java/apps/hello-java-2/hello-java-2"
+      },
+      "outputs": [
+        "{workspaceRoot}/java/apps/hello-java-2/hello-java-2/target"
+      ]
+    },
+    "clean": {
+      "executor": "@nxrocks/nx-spring-boot:clean",
+      "options": {
+        "root": "./java/apps/hello-java-2/hello-java-2"
+      }
+    },
+    "run": {
+      "executor": "@nxrocks/nx-spring-boot:run",
+      "options": {
+        "root": "./java/apps/hello-java-2/hello-java-2"
+      }
+    },
+    "serve": {
+      "executor": "@nxrocks/nx-spring-boot:serve",
+      "options": {
+        "root": "./java/apps/hello-java-2/hello-java-2"
+      }
+    },
+    "build-image": {
+      "executor": "@nxrocks/nx-spring-boot:build-image",
+      "options": {
+        "root": "./java/apps/hello-java-2/hello-java-2"
+      },
+      "outputs": [
+        "{workspaceRoot}/java/apps/hello-java-2/hello-java-2/target"
+      ]
+    },
+    "build-info": {
+      "executor": "@nxrocks/nx-spring-boot:build-info",
+      "options": {
+        "root": "./java/apps/hello-java-2/hello-java-2"
+      }
+    }
+  },
+  "tags": []
+}

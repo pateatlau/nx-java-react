@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "remote-mfe-1/Module": ["react/apps/remote-mfe-1/src/remote-entry.ts"]
+      "remote-mfe-1/Module": ["react/apps/remote-mfe-1/src/remote-entry.ts"],
+      "remote-mfe-2/Module": ["react/apps/remote-mfe-2/src/remote-entry.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
